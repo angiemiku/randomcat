@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;  
+  padding-top: 70px;
+  width: 100%;
+}
+
+.content {
+  width: 45%;
+  padding: 20px;
+  background: #96ffee;
+  color: #121481;
+  border: 10px solid #121481;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer p {
+  color: black;
+}
+
+body.dark-mode .footer p {
+  color: white;
+}
+
+body.dark-mode .content {
+  background: #1e1e2f;
+  color: #aee7ff;
+}
+
+.btn {
+  margin-top: 7px;
+  padding: 10px 20px;
+  background: #6fd7d0;
+  color: black;
+  border: 2px solid #121481;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: normal;
+}
+
+.btn:hover {
+  font-weight: bold;
+}
+
+.btn:focus {
+  outline: 3px solid #121481;
+  outline-offset: 2px;
+}
+
+.fact {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.cat-img {
+  margin-top: 15px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #121481;
+  height: auto;
+}
+
+.spinner {
+  margin: 15px auto;
+  width: 40px;
+  height: 40px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #121481;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#darkModeToggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+#darkModeToggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode #darkModeToggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 90%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
