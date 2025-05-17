@@ -38,13 +38,13 @@ body.dark-mode {
   text-align: center;
 }
 
-.footer p {
+/*.footer p {
   color: black;
 }
 
 body.dark-mode .footer p {
   color: white;
-}
+}*/
 
 body.dark-mode .content {
   background: #1e1e2f;
