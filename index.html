@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Cute Cats</title>
+  <meta name="description" content="Random cat pics and facts because I love cats, meow!">
+  <meta name="theme-color" content="#96FFEE">
+  
+  <meta property="og:url" content="https://angiemiku.github.io/randomcat">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cute Cats">
+  <meta property="og:description" content="Random cat pics and facts because I love cats, meow!">
+  <meta property="og:image" content="https://i.postimg.cc/7Z7MW8cc/2bea65889be8574ad27516762c030621.jpg">
+  <meta property="og:site_name" content="Cats" />
+    
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="github.io">
+  <meta property="twitter:url" content="https://angiemiku.github.io/randomcat">
+  <meta name="twitter:title" content="Cute Cats">
+  <meta name="twitter:description" content="Random cat pics and facts because I love cats, meow!">
+  <meta name="twitter:image" content="https://i.postimg.cc/7Z7MW8cc/2bea65889be8574ad27516762c030621.jpg">
+  
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+  <script src="meow.js" defer></script>
+</head>
+<body>
+  <button id="darkModeToggle" aria-label="Toggle dark mode">
+    <span id="toggleIcon" aria-hidden="true">🌙</span>
+  </button>
+
+  <main class="container">
+    <section class="content">
+      <button class="btn" aria-live="polite">GET A CAT</button>
+      <div class="spinner" style="display: none;" role="status" aria-label="Loading..."></div>
+      <img class="cat-img" src="" alt="Cute cat" style="display: none;" />
+      <p class="fact" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <!--<footer class="footer" role="contentinfo">
+    <p>&copy; Powered by github.io | 2025 Random Cats by angiemiku</p>
+  </footer>-->
+</body>
+  </html>
